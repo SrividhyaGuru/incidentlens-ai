@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: incidentlens
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/incidentlens
+    username: ${DB_USERNAME:incidentlens}
+    password: ${DB_PASSWORD:incidentlens_dev}
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+
+  flyway:
+    enabled: true
