@@ -1,0 +1,2 @@
+ALTER TABLE alerts
+    ALTER COLUMN occurred_at DROP NOT NULL;
